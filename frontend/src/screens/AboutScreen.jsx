@@ -1,5 +1,5 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "./AboutScreen.css";
 import umesh from "../assets/images/umesh.jpg";
 import prudhvi from "../assets/images/prudhvi.jpg";
