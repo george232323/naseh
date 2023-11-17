@@ -12,7 +12,7 @@ function Members() {
             <div className="title">
                 <h2> Team Members </h2>``
             </div>
-            <div className="row row-cols-2 row-cols-md-3">
+            <div className="row row-cols-3 row-cols-md-3">
                 <div className=" col card">
                     <div className="image">
                         <img src={vamsi} alt="" />
