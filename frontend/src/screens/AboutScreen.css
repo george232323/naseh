@@ -1,0 +1,88 @@
+.main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#61fbb6,#5abaff);
+}
+.title{
+    padding: 20px;
+
+}
+.card{
+    margin: 50px;
+    position: relative;
+    width: 350px;
+    height: 220px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0,0,0.4);
+    transition:  all ease 0.6s;
+}
+.card:hover{
+    height: 350px;
+
+}
+.image{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background:#fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0,0,0.45);
+    overflow: hidden;
+    transition:  all ease 0.5s;
+
+}
+.card:hover .image{
+    width: 250px;
+    height: 250px;
+}
+
+.image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .content
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.card .content .details{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+}
+.card .content .details h3{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+}
+.card .content .details h3 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.6;
+    
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
