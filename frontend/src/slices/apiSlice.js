@@ -10,6 +10,8 @@ import { logout } from './authSlice'; // Import the logout action
 
 const baseQuery = fetchBaseQuery({
   baseUrl: BASE_URL,
+  // baseUrl: 'https://product-helpers.onrender.com',
+  // baseUrl: 'http://localhost:5000/',
 });
 
 async function baseQueryWithAuth(args, api, extra) {

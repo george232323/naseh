@@ -10,6 +10,8 @@ import {
   useUpdateProductMutation,
   useUploadProductImageMutation,
 } from '../../slices/productsApiSlice';
+import {storage} from './firebase';
+import {ref, uploadBytes,getDownloadURL} from 'firebase/storage';
 
 const ProductEditScreen = () => {
   const { id: productId } = useParams();
@@ -71,15 +73,21 @@ const ProductEditScreen = () => {
   }, [product]);
 
   const uploadFileHandler = async (e) => {
-    const formData = new FormData();
-    formData.append('image', e.target.files[0]);
+    const file=e.target.files[0];
+    const refFile=ref(storage,`/productImages/${name}`);
     try {
+      const formData = new FormData();
+      formData.append('image', e.target.files[0]);
       const res = await uploadProductImage(formData).unwrap();
-      toast.success(res.message);
-      setImage(res.image);
-    } catch (err) {
-      toast.error(err?.data?.message || err.error);
+      const snapshot = await uploadBytes(refFile, file);
+      const url = await getDownloadURL(snapshot.ref);
+      setImage(url);
+        toast.success(res.message);
+    } catch (error) {
+      toast.error('Failed to upload image');
+      console.error(error);
     }
+
   };
 
   return (

@@ -11,10 +11,13 @@
 }
 .title{
     padding: 20px;
-
+    text-align: center;
+    color: black;
 }
-.card{
-    margin: 50px;
+.card1{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
     position: relative;
     width: 310px;
     height: 220px;
@@ -23,7 +26,10 @@
     box-shadow: 0 35px 80px rgba(0, 0,0,0.4);
     transition:  all ease 0.6s;
 }
-.card:hover{
+.col{
+    margin-top: 50px;
+}
+.card1:hover{
     height: 350px;
 
 }
@@ -41,7 +47,7 @@
     transition:  all ease 0.5s;
 
 }
-.card:hover .image{
+.card1:hover .image{
     width: 250px;
     height: 250px;
 }
@@ -54,7 +60,7 @@
     height: 100%;
     object-fit: cover;
 }
-.card .content
+.card1 .content
 {
     position: absolute;
     width: 100%;
@@ -63,19 +69,19 @@
     justify-content: center;
     align-items: flex-end;
 }
-.card .content .details{
+.card1 .content .details{
     padding: 20px;
     text-align: center;
     width: 100%;
     transition: 0.5s;
 }
-.card .content .details h3{
+.card1 .content .details h3{
     font-size: 1.25em;
     font-weight: 600;
     color: #555;
     line-height: 1.2em;
 }
-.card .content .details h3 span{
+.card1 .content .details h3 span{
     font-size: 0.75em;
     font-weight: 500;
     opacity: 0.6;
@@ -86,3 +92,56 @@ a{
     font-weight: 600;
     color: black;
 }
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  
+  
+  /* 2 columns (600px) */
+  
+  @media only screen and (min-width:600px) {
+    .container .col {
+      float: left;
+      width: 50%;
+    }
+  }
+  
+  
+  /* 3 columns (768px) */
+  
+  @media only screen and (min-width:768px) {
+    .container .col {
+      width: 33.333%;
+    }
+  }
+  
+  
+  /* 4 columns (992px) */
+  
+  @media only screen and (min-width:992px) {
+    .container .col {
+      width: 25%;
+    }
+  }

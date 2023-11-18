@@ -1,4 +1,8 @@
-export const BASE_URL = process.env.NODE_ENV === 'https://product-helpers.onrender.com/' ? 'http://localhost:5000' : '';
+export const BASE_URL =
+  process.env.NODE_ENV === 'development'
+    ? 'http://localhost:5000/'
+    : 'https://product-helpers.onrender.com';
+// console.log(BASE_URL);
 // export const BASE_URL = ''; // If using proxy
 export const PRODUCTS_URL = '/api/products';
 export const USERS_URL = '/api/users';
