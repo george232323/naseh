@@ -17,7 +17,7 @@ import AdminRoute from './components/AdminRoute';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen';
-// import AboutScreen from './screens/AboutScreen';
+import AboutScreen from './screens/AboutScreen';
 import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import ShippingScreen from './screens/ShippingScreen';
@@ -46,7 +46,7 @@ const router = createBrowserRouter(
       />
       <Route path='/product/:id' element={<ProductScreen />} />
       <Route path='/cart' element={<CartScreen />} />
-      {/* <Route path='/about' element={<AboutScreen />} /> */}
+      <Route path='/about' element={<AboutScreen />} />
       <Route path='/login' element={<LoginScreen />} />
       <Route path='/register' element={<RegisterScreen />} />
       {/* Registered users */}

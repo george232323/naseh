@@ -12,15 +12,15 @@ function Members() {
             <div className="title">
                 <h2> Team Members </h2>``
             </div>
-            <div className="row row-cols-3 row-cols-md-3">
-                <div className=" col card">
+            <div className="row container row-cols-3 row-cols-md-3">
+                <div className=" col card1">
                     <div className="image">
                         <img src={vamsi} alt="" />
                     </div>
                     <div className="content">
                         <div className="details">
                             <h3>
-                                Chillara V L N S Pavana Vamsi <br />{" "}
+                                Chillara Pavana Vamsi <br />{" "}
                                 <span> Frontend and Backend </span>
                                 <br />
                                 <span>
@@ -30,7 +30,7 @@ function Members() {
                         </div>
                     </div>
                 </div>
-                <div className=" col card">
+                <div className=" col card1">
                     <div className="image">
                         <img src={umesh} alt="" />
                     </div>
@@ -40,30 +40,30 @@ function Members() {
                                 Umesh Chandra S <br /> <span> Frontend and Backend </span>
                                 <br />
                                 <span>
-                                    <a href="#">Portfolio</a>{" "}
+                                    <a href=".">Portfolio</a>{" "}
                                 </span>
                             </h3>
                         </div>
                     </div>
                 </div>
-                <div className=" col card">
+                <div className=" col card1">
                     <div className="image">
                         <img src={prudhvi} alt="" />
                     </div>
                     <div className="content">
                         <div className="details">
                             <h3>
-                                Pruthivi Raj V S Vulapalli
+                                Pruthivi Raj Vulapalli
                                 <br /> <span> Frontend and Backend </span>
                                 <br />
                                 <span>
-                                    <a href="#">Portfolio</a>{" "}
+                                    <a href=".">Portfolio</a>{" "}
                                 </span>
                             </h3>
                         </div>
                     </div>
                 </div>
-                <div className=" col card">
+                <div className=" col card1">
                     <div className="image">
                         <img src={mukesh} alt="" />
                     </div>
@@ -74,13 +74,13 @@ function Members() {
                                 <br /> <span> Frontend and Backend </span>
                                 <br />
                                 <span>
-                                    <a href="#">Portfolio</a>{" "}
+                                    <a href=".">Portfolio</a>{" "}
                                 </span>
                             </h3>
                         </div>
                     </div>
                 </div>
-                <div className="col card">
+                <div className="col card1">
                     <div className="image">
                         <img src={pavan} alt="" />
                     </div>
@@ -90,7 +90,7 @@ function Members() {
                                 Pavan Sai Kishor B <br /> <span> Frontend and Backend </span>
                                 <br />
                                 <span>
-                                    <a href="#">Portfolio</a>{" "}
+                                    <a href=".">Portfolio</a>{" "}
                                 </span>
                             </h3>
                         </div>

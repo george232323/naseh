@@ -33,11 +33,11 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg='primary' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar bg='primary' variant='light' expand='lg'  collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-              <img src={logo} alt='ProShop' style={{ width: '35px' }} />
+              <img src={logo} alt='PH' style={{ width: '35px' }} />
               Product Helpers
             </Navbar.Brand>
           </LinkContainer>
