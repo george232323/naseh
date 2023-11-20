@@ -2,11 +2,12 @@
 
 Product Helpers is an open-source platform designed to streamline the process of collecting, managing, and displaying product reviews and ratings. It provides a user-friendly interface for both consumers and businesses, allowing for seamless communication and feedback.
 
-> eCommerce platform built with the MERN stack & Redux.
+## E-Commerce platform built with the MERN stack & Redux.
 
 <!-- toc -->
-
+- [Deployment Link]()
 - [Features](#features)
+- [Team Members](#team-members)
 <!-- tocstop -->
 
 ## Features
@@ -23,3 +24,11 @@ Product Helpers is an open-source platform designed to streamline the process of
 - Mark orders as delivered option
 - Checkout process (shipping, payment method, etc)
 - Database seeder (products & users)
+
+## Team Members
+
+ - Chillara V L N S Pavana Vamsi
+ - Umesh Chandra S
+ - Pruthivi Raj Vulapalli
+ - Madepalli Mukesh Sai
+ - Pavan Sai Kishor B
