@@ -10,6 +10,14 @@ Product Helpers is an open-source platform designed to streamline the process of
 - [Team Members](#team-members)
 <!-- tocstop -->
 
+## Usage 
+ - Admin
+    - Email : admin@email.com
+    - Password : admin
+ - User
+    - Email : tester@gmail.com
+    - Password : tester
+
 ## Features
 
 - Full featured shopping cart
