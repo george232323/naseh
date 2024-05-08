@@ -1,5 +1,5 @@
 import { Navbar, Nav, Container, NavDropdown, Badge } from 'react-bootstrap';
-import { FaBinoculars, FaShoppingCart, FaUser } from 'react-icons/fa';
+import { FaShoppingCart, FaUser } from 'react-icons/fa';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg='success' variant='' expand='lg'  collapseOnSelect>
+      <Navbar bg='info' variant='light' expand='lg'  collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
@@ -55,11 +55,11 @@ const Header = () => {
                   )}
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to='/about'>
+              {/* <LinkContainer to='/about'>
                 <Nav.Link>
                   <FaBinoculars  /> Team
                 </Nav.Link>
-              </LinkContainer>
+              </LinkContainer> */}
               {userInfo ? (
                 <>
                   <NavDropdown title={userInfo.name} id='username'>
