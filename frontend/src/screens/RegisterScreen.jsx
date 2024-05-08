@@ -43,7 +43,7 @@ const RegisterScreen = () => {
         dispatch(setCredentials({ ...res }));
         navigate(redirect);
       } catch (err) {
-        toast.error(err?.data?.message || err.error);
+        toast.error("Empty fields found");
       }
     }
   };
@@ -59,6 +59,7 @@ const RegisterScreen = () => {
             placeholder='Enter name'
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
           ></Form.Control>
         </Form.Group>
 
@@ -69,6 +70,7 @@ const RegisterScreen = () => {
             placeholder='Enter email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           ></Form.Control>
         </Form.Group>
 
@@ -79,6 +81,7 @@ const RegisterScreen = () => {
             placeholder='Enter password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           ></Form.Control>
         </Form.Group>
         <Form.Group className='my-2' controlId='confirmPassword'>
@@ -88,6 +91,7 @@ const RegisterScreen = () => {
             placeholder='Confirm password'
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
+            required
           ></Form.Control>
         </Form.Group>
 

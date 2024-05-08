@@ -7,7 +7,6 @@ Product Helpers is an open-source platform designed to streamline the process of
 <!-- toc -->
 - [Deployment Link](https://product-helpers-4avp.onrender.com/)
 - [Features](#features)
-- [Team Members](#team-members)
 <!-- tocstop -->
 
 ## Usage 
@@ -32,11 +31,3 @@ Product Helpers is an open-source platform designed to streamline the process of
 - Mark orders as delivered option
 - Checkout process (shipping, payment method, etc)
 - Database seeder (products & users)
-
-## Team Members
-
- - Chillara V L N S Pavana Vamsi
- - Umesh Chandra S
- - Pruthivi Raj Vulapalli
- - Madepalli Mukesh Sai
- - Pavan Sai Kishor B
